@@ -5357,11 +5357,14 @@ function generateHTML() {
     // Generate gallery
     let galleryHTML = '';
     for (let i = 1; i <= imageCount; i++) {
-        galleryHTML += `
+        const imageDesc = document.getElementById(`imageDesc${i}`)?.value || '';
+        if (imageDesc.trim()) {
+            galleryHTML += `
                 <div class="khung-anh">
-                    <img src="Image/Image${i}.jpg" alt="Ảnh hoạt động lớp">
-                    <p class="mo-ta-anh">Ảnh ${i}</p>
+                    <img src="Image/Image${i}.jpg" alt="${imageDesc}">
+                    <p class="mo-ta-anh">${imageDesc}</p>
                 </div>`;
+        }
     }
     
     // Get footer info
@@ -5499,6 +5502,28 @@ function generateCSS() {
     return cssThemes[selectedTheme];
 }
 
+// Function to update image description inputs
+function updateImageDescriptions() {
+    const count = parseInt(document.getElementById('imageCount').value) || 0;
+    const container = document.getElementById('imageDescriptionsContainer');
+    const defaultDescriptions = [
+        'Lớp học của chúng mình',
+        'Hoạt động ngoại khóa',
+        'Các hoạt động vui chơi',
+        'Kỷ niệm đáng nhớ'
+    ];
+    
+    container.innerHTML = '';
+    for (let i = 1; i <= count; i++) {
+        const defaultDesc = i <= defaultDescriptions.length ? defaultDescriptions[i-1] : '';
+        container.innerHTML += `
+            <div style="margin: 10px 0;">
+                <label>Mô tả ảnh ${i}:</label>
+                <input type="text" id="imageDesc${i}" value="${defaultDesc}" style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px;">
+            </div>`;
+    }
+}
+
 // Event listeners
 document.getElementById('generateBtn').addEventListener('click', function() {
     const htmlCode = generateHTML();
@@ -5524,4 +5549,9 @@ document.getElementById('copyCssBtn').addEventListener('click', function() {
     cssTextarea.select();
     document.execCommand('copy');
     alert('📋 Đã copy CSS code!');
+});
+
+// Initialize image descriptions on page load
+document.addEventListener('DOMContentLoaded', function() {
+    updateImageDescriptions();
 });

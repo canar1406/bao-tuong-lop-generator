@@ -185,10 +185,22 @@
                         <!-- Gallery Section -->
                         <div class="mb-4">
                             <h5 class="text-primary">📷 Phần Góc Ảnh</h5>
+                            <div class="alert alert-info" style="font-size: 0.9em;">
+                                <strong>📋 Cơ chế hoạt động:</strong>
+                                <ul class="mb-0" style="padding-left: 20px;">
+                                    <li>Nhập số lượng ảnh → Các ô mô tả sẽ tự động được tạo</li>
+                                    <li>Chỉ những ảnh có mô tả mới hiển thị trên website (giống như phần bài viết)</li>
+                                    <li>Ảnh nào không có mô tả sẽ bị ẩn đi</li>
+                                    <li>Số lượng: Tối thiểu <strong>1 ảnh</strong> - Tối đa <strong>50 ảnh</strong></li>
+                                    <li>Ảnh được lưu tại: <code>Image/Image1.jpg</code>, <code>Image/Image2.jpg</code>, ...</li>
+                                </ul>
+                            </div>
                             <div class="mb-3">
-                                <label class="form-label">Số lượng ảnh:</label>
-                                <input type="number" class="form-control" id="imageCount" value="4" min="1" max="50" placeholder="Nhập số lượng ảnh...">
-                                <small class="text-muted">Ảnh sẽ được load từ Image/Image1.jpg, Image/Image2.jpg, ...</small>
+                                <label class="form-label">Số lượng ảnh (1-50):</label>
+                                <input type="number" class="form-control" id="imageCount" value="4" min="1" max="50" placeholder="Nhập số lượng ảnh..." onchange="updateImageDescriptions()">
+                            </div>
+                            <div id="imageDescriptionsContainer">
+                                <!-- Mô tả ảnh sẽ được tạo động ở đây -->
                             </div>
                         </div>
 
