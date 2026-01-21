@@ -5552,6 +5552,11 @@ document.getElementById('copyCssBtn').addEventListener('click', function() {
 });
 
 // Initialize image descriptions on page load
-document.addEventListener('DOMContentLoaded', function() {
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+        updateImageDescriptions();
+    });
+} else {
+    // Document already loaded
     updateImageDescriptions();
-});
+}
