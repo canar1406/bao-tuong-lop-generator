@@ -1,0 +1,705 @@
+/* Theme 15: Industrial Steel - Thép Công Nghiệp */
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;600;700;800;900&family=Inter:wght@400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Roboto Mono', sans-serif;
+    line-height: 1.8;
+    color: #ecf0f1;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
+    background-attachment: fixed;
+}
+
+@keyframes scanFast {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+}
+
+@keyframes shimmer {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+#header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: #3498db;
+    padding: 4rem 2rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(52, 152, 219, 0.3);
+    border-bottom: 3px solid #3498db;
+    position: relative;
+}
+
+.banner {
+    padding: 1rem;
+}
+
+.ten-bao {
+    font-family: 'Saira', 'Inter', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(52, 152, 219, 0.8);
+    letter-spacing: 2px;
+    animation: shimmer 2s ease-in-out infinite;
+}
+
+.slogan {
+    font-size: 1.3rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: 'Inter', sans-serif;
+}
+
+#content {
+    max-width: 1400px;
+    margin: 3rem auto;
+    padding: 3rem 2rem;
+    background: rgba(52, 73, 94, 0.98);
+    box-shadow: 0 15px 40px rgba(52, 152, 219, 0.2);
+    border-radius: 0;
+    border: 2px solid #3498db;
+}
+
+.gioi-thieu {
+    padding: 2.5rem;
+    background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+    border-left: 5px solid #3498db;
+    margin: 2rem 0;
+    border-radius: 0;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3), inset 0 0 20px rgba(52, 152, 219, 0.1);
+}
+
+.gioi-thieu h2 {
+    font-family: 'Saira', 'Inter', sans-serif;
+    color: #3498db;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 0 15px rgba(52, 152, 219, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.gioi-thieu p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Inter', sans-serif;
+}
+
+.khu-vuc-bai-viet {
+    padding: 2rem;
+    margin: 3rem 0;
+}
+
+.khu-vuc-bai-viet h2 {
+    font-family: 'Saira', 'Inter', sans-serif;
+    color: #3498db;
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.bai-viet {
+    background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+    padding: 2.5rem;
+    margin: 2rem 0;
+    border-radius: 0;
+    border: 2px solid #3498db;
+    box-shadow: 0 5px 20px rgba(52, 152, 219, 0.3), inset 0 0 15px rgba(52, 152, 219, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bai-viet:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.5), inset 0 0 20px rgba(52, 152, 219, 0.15);
+    border-color: #3498db;
+}
+
+.bai-viet h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #3498db;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;    text-transform: uppercase;}
+
+.bai-viet h4 {
+    color: #3498db;
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    font-weight: 700;
+    border-left: 4px solid #3498db;
+    padding-left: 1rem;
+    text-shadow: 0 0 10px rgba(52, 152, 219, 0.7), 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.bai-viet p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Inter', sans-serif;
+}
+
+.bai-viet ul, .bai-viet ol {
+    margin: 1.5rem 0 1.5rem 2rem;
+}
+
+.bai-viet li {
+    margin: 0.8rem 0;
+    line-height: 1.8;
+    color: #ecf0f1;
+}
+
+.bai-viet strong {
+    color: #3498db;
+    font-weight: 700;
+}
+
+.bai-viet a {
+    color: #3498db;
+    text-decoration: none;
+    border-bottom: 2px solid #2980b9;
+    transition: all 0.3s ease;
+}
+
+.bai-viet a:hover {
+    border-bottom-color: #3498db;
+    color: #2980b9;
+}
+
+.bai-viet pre {
+    background: #1a252f;
+    border: 2px solid #2980b9;
+    border-radius: 0;
+    padding: 1.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.bai-viet code {
+    background: #1a252f;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: #3498db;
+}
+
+.bai-viet blockquote {
+    background: #34495e;
+    border-left: 4px solid #3498db;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 0;
+    font-style: italic;
+    color: #ecf0f1;
+}
+
+.goc-anh {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, rgba(52, 73, 94, 0.5) 0%, rgba(44, 62, 80, 0.5) 100%);
+    margin: 4rem -2rem;
+    border-radius: 0;
+    position: relative;
+    border-top: 3px solid #3498db;
+    border-bottom: 3px solid #3498db;
+}
+
+.goc-anh::before {
+    content: '⚙️';
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    font-size: 4rem;
+    opacity: 0.4;
+    animation: shimmer 5s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px rgba(52, 152, 219, 0.8));
+}
+
+.goc-anh::after {
+    content: '🔧';
+    position: absolute;
+    bottom: 40px;
+    right: 80px;
+    font-size: 4rem;
+    opacity: 0.4;
+    animation: shimmer 4s ease-in-out infinite 1s;
+    filter: drop-shadow(0 0 10px rgba(52, 152, 219, 0.8));
+}
+
+.goc-anh h2 {
+    font-family: 'Saira', 'Inter', sans-serif;
+    color: #3498db;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-shadow: 
+        0 0 15px rgba(52, 152, 219, 0.9),
+        3px 3px 0 rgba(41, 128, 185, 0.5);
+}
+
+.goc-anh h2::before {
+    content: '⚙️ ';
+    filter: drop-shadow(0 0 10px rgba(52, 152, 219, 0.8));
+}
+
+.thu-vien-anh {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.khung-anh {
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 
+        0 10px 40px rgba(52, 152, 219, 0.3),
+        inset 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+    border: 3px solid #2980b9;
+    background: #2c3e50;
+    position: relative;
+}
+
+.khung-anh::before {
+    content: '⚙️';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2.5rem;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    filter: drop-shadow(0 0 10px rgba(52, 152, 219, 0.9));
+}
+
+.khung-anh:hover::before {
+    opacity: 1;
+}
+
+.khung-anh:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 15px 50px rgba(52, 152, 219, 0.5),
+        inset 0 0 30px rgba(52, 152, 219, 0.2);
+    border-color: #3498db;
+}
+
+.khung-anh img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.9) contrast(1.1);
+    transition: all 0.4s ease;
+}
+
+.khung-anh:hover img {
+    filter: brightness(1) contrast(1.2);
+    transform: scale(1.1);
+}
+
+.mo-ta-anh {
+    padding: 1.5rem;
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    border-top: 3px solid #2980b9;
+}
+
+.khu-vuc-nhac-video {
+    padding: 2rem;
+    margin: 3rem 0;
+    background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+    border-radius: 0;
+    box-shadow: 0 5px 20px rgba(52, 152, 219, 0.3), inset 0 0 20px rgba(52, 152, 219, 0.1);
+    border: 2px solid #3498db;
+}
+
+.khu-vuc-nhac-video h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #3498db;
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px rgba(52, 152, 219, 1), 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.audio-player {
+    width: 100%;
+    margin-bottom: 3rem;
+    border-radius: 0;
+    border: 2px solid #3498db;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 0;
+    box-shadow: 0 5px 20px rgba(52, 152, 219, 0.3);
+    border: 2px solid #3498db;
+}
+
+.video-container video,
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.goc-binh-luan {
+    padding: 6rem 3rem;
+    margin: 5rem 0;
+    background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+    border-radius: 0;
+    box-shadow: 
+        0 20px 60px rgba(52, 152, 219, 0.4),
+        inset 0 0 50px rgba(52, 152, 219, 0.1);
+    border: 3px solid #3498db;
+    position: relative;
+}
+
+.goc-binh-luan::before {
+    content: '💬';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    animation: shimmer 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 15px rgba(52, 152, 219, 0.9));
+}
+
+.goc-binh-luan h2 {
+    font-family: 'Orbitron', 'Inter', sans-serif;
+    color: #3498db;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 6px;
+    text-shadow: 
+        0 0 20px rgba(52, 152, 219, 1),
+        3px 3px 6px rgba(0, 0, 0, 0.8);    text-transform: uppercase;    text-transform: uppercase;
+}
+
+.goc-binh-luan input,
+.goc-binh-luan textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 3px solid #2980b9;
+    border-radius: 0;
+    font-family: 'Inter', 'Roboto Mono', sans-serif;
+    font-size: 1rem;
+    background: #2c3e50;
+    color: #ecf0f1;
+    transition: border-color 0.3s ease;
+}
+
+.goc-binh-luan input:focus,
+.goc-binh-luan textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.goc-binh-luan textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.nut-gui {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    padding: 1.3rem 3.5rem;
+    border: none;
+    border-radius: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.5);
+    letter-spacing: 1px;
+    font-family: 'Saira', 'Inter', sans-serif;
+}
+
+.nut-gui::before {
+    content: '⚙️ ';
+}
+
+.nut-gui:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 35px rgba(52, 152, 219, 0.7);
+    background: linear-gradient(135deg, #2980b9 0%, #21618c 100%);
+    animation: shimmer 1s infinite;
+}
+
+#footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
+    color: #ffffff;
+    padding: 6rem 3rem 2rem 3rem;
+    margin-top: 6rem;
+    border-radius: 0;
+    box-shadow: 
+        0 -15px 50px rgba(52, 152, 219, 0.5),
+        inset 0 20px 60px rgba(0, 0, 0, 0.5);
+    border-top: 4px solid #3498db;
+    position: relative;
+    overflow: hidden;
+}
+
+#footer::before {
+    content: '⚙️ 🔧 ⚙️ 🔧 ⚙️';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    font-size: 2.5rem;
+    opacity: 0.3;
+    text-align: center;
+    filter: drop-shadow(0 0 10px rgba(52, 152, 219, 0.8));
+}
+
+#footer::after {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(52, 152, 219, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: shimmer 8s ease-in-out infinite;
+}
+
+.thong-tin-footer {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 4rem;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 3rem;
+}
+
+.nhom-thuc-hien,
+.lien-he,
+.cap-nhat {
+    background: rgba(52, 152, 219, 0.1);
+    padding: 2.5rem;
+    border-radius: 0;
+    box-shadow: 
+        0 10px 30px rgba(52, 152, 219, 0.3),
+        inset 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(52, 152, 219, 0.5);
+    transition: all 0.4s ease;
+}
+
+.nhom-thuc-hien:hover,
+.lien-he:hover,
+.cap-nhat:hover {
+    transform: translateY(-10px);
+    box-shadow: 
+        0 20px 50px rgba(52, 152, 219, 0.5),
+        inset 0 0 30px rgba(52, 152, 219, 0.2);
+    border-color: rgba(52, 152, 219, 0.8);
+    background: rgba(52, 152, 219, 0.15);
+}
+
+.thong-tin-footer h3 {
+    color: #3498db;
+    font-size: 2.2rem;
+    font-weight: 700;
+    border-bottom: 3px solid rgba(52, 152, 219, 0.6);
+    padding-bottom: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 
+        0 0 15px rgba(52, 152, 219, 0.9),
+        3px 3px 6px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-family: 'Saira', 'Inter', sans-serif;
+    letter-spacing: 1px;
+}
+
+.thong-tin-footer h3::before {
+    content: '⚙️ ';
+    font-size: 1.8rem;
+    filter: drop-shadow(0 0 10px rgba(52, 152, 219, 0.9));
+}
+
+.thong-tin-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.thong-tin-footer li {
+    padding: 1.2rem 1rem;
+    border-bottom: 1px solid rgba(52, 152, 219, 0.3);
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.thong-tin-footer li:last-child {
+    border-bottom: none;
+}
+
+.thong-tin-footer li::before {
+    content: '▪ ';
+    color: #3498db;
+    font-size: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+.thong-tin-footer li:hover {
+    padding-left: 2rem;
+    background: rgba(52, 152, 219, 0.1);
+    border-left: 3px solid #3498db;
+}
+
+.lien-he p,
+.cap-nhat p {
+    font-size: 1.15rem;
+    margin: 1.5rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    line-height: 1.8;
+    padding: 1rem;
+    background: rgba(52, 152, 219, 0.1);
+    border-left: 3px solid rgba(52, 152, 219, 0.6);
+}
+
+.lien-he p strong,
+.cap-nhat p strong {
+    color: #3498db;
+    font-weight: 900;
+    text-shadow: 
+        0 0 10px rgba(52, 152, 219, 0.8),
+        3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.thong-tin-footer a {
+    color: #3498db;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(52, 152, 219, 0.5);
+    transition: all 0.3s ease;
+}
+
+.thong-tin-footer a:hover {
+    border-bottom-color: #3498db;
+    text-shadow: 
+        0 0 15px rgba(52, 152, 219, 1),
+        2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.copyright {
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-top: 3rem;
+    border-top: 3px solid rgba(52, 152, 219, 0.5);
+    font-size: 1.2rem;
+    text-shadow: 
+        0 0 10px rgba(52, 152, 219, 0.6),
+        3px 3px 6px rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+    background: rgba(52, 152, 219, 0.05);
+    padding: 2rem;
+    font-family: 'Saira', 'Inter', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.copyright::before {
+    content: '© ';
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.copyright::after {
+    content: ' ⚙️';
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    animation: shimmer 2s infinite;
+}
+
+@media (max-width: 768px) {
+    .ten-bao {
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+    }
+
+    .slogan {
+        font-size: 1.1rem;
+    }
+
+    #content {
+        padding: 2rem 1rem;
+        margin: 2rem auto;
+    }
+
+    .gioi-thieu,
+    .bai-viet {
+        padding: 2rem;
+    }
+
+    .gioi-thieu h2,
+    .khu-vuc-bai-viet h2,
+    .goc-anh h2,
+    .goc-am-nhac h2,
+    .goc-binh-luan h2 {
+        font-size: 2rem;
+    }
+
+    .bai-viet h3 {
+        font-size: 1.6rem;
+    }
+
+    .thu-vien-anh {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    #footer {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ten-bao {
+        font-size: 2rem;
+    }
+
+    .gioi-thieu,
+    .bai-viet,
+    .goc-binh-luan {
+        padding: 1.5rem;
+    }
+}

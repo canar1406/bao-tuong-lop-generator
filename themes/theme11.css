@@ -1,0 +1,1059 @@
+/* Theme 11: Cherry Blossom Dream - Giấc Mơ Hoa Anh Đào */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Comfortaa:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', cursive;
+    line-height: 1.9;
+    color: #8b5a7d;
+    background: linear-gradient(135deg, #ffe0f0 0%, #ffd0e5 20%, #ffc0db 40%, #ffb0d1 60%, #ffa0c7 80%, #ff90bd 100%);
+    background-attachment: fixed;
+}
+
+@keyframes petalFall {
+    0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+@keyframes blossomFloat {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-15px) rotate(-8deg); }
+    50% { transform: translateY(-25px) rotate(0deg); }
+    75% { transform: translateY(-15px) rotate(8deg); }
+}
+
+@keyframes sparkleShine {
+    0%, 100% { opacity: 1; transform: scale(1) rotate(0deg); }
+    25% { opacity: 0.6; transform: scale(1.2) rotate(90deg); }
+    50% { opacity: 1; transform: scale(1) rotate(180deg); }
+    75% { opacity: 0.6; transform: scale(1.2) rotate(270deg); }
+}
+
+@keyframes heartPulse {
+    0%, 100% { transform: scale(1); }
+    20% { transform: scale(1.15); }
+    40% { transform: scale(1); }
+    60% { transform: scale(1.1); }
+    80% { transform: scale(1); }
+}
+
+#header {
+    background: linear-gradient(135deg, #ff69b4 0%, #ff85c1 20%, #ffa0cf 40%, #ffb5dd 60%, #ffc8e6 80%, #ffddf0 100%);
+    color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(255, 105, 180, 0.5);
+}
+
+#header::before {
+    content: '🌸 ✿ 🌸 ✿ 🌸 ✿ 🌸 ✿ 🌸';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    font-size: 2.5rem;
+    opacity: 0.5;
+    animation: sparkleShine 4s infinite;
+}
+
+#header::after {
+    content: '🌸';
+    position: absolute;
+    bottom: 30px;
+    right: 10%;
+    font-size: 5rem;
+    opacity: 0.4;
+    animation: blossomFloat 5s ease-in-out infinite;
+}
+
+.banner {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.ten-bao {
+    font-family: 'Comfortaa', cursive;
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    text-shadow: 
+        3px 3px 0 #ff85c1,
+        -2px -2px 0 #ffd0e5,
+        0 0 25px rgba(255, 255, 255, 0.9),
+        0 0 40px rgba(255, 105, 180, 0.6);
+    letter-spacing: 4px;
+    animation: heartPulse 2.5s infinite;
+}
+
+.ten-bao::before {
+    content: '🌸';
+    margin-right: 1.5rem;
+    animation: blossomFloat 3s ease-in-out infinite;
+    display: inline-block;
+}
+
+.ten-bao::after {
+    content: '🌸';
+    margin-left: 1.5rem;
+    animation: blossomFloat 3s ease-in-out infinite 0.5s;
+    display: inline-block;
+}
+
+.slogan {
+    font-size: 1.6rem;
+    font-style: italic;
+    text-shadow: 
+        2px 2px 4px rgba(139, 90, 125, 0.3),
+        0 0 15px rgba(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+#content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.gioi-thieu {
+    background: linear-gradient(135deg, rgba(255, 230, 240, 0.95) 0%, rgba(255, 235, 245, 0.95) 100%);
+    padding: 4rem;
+    margin: 3rem 0;
+    border-radius: 60px;
+    box-shadow: 
+        0 15px 50px rgba(255, 105, 180, 0.4),
+        inset 0 0 0 5px rgba(255, 192, 219, 0.4);
+    border: 5px dashed #ff69b4;
+    position: relative;
+}
+
+.gioi-thieu::before {
+    content: '🌸';
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    animation: blossomFloat 4s ease-in-out infinite;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.gioi-thieu::after {
+    content: '🌸';
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    font-size: 3rem;
+    opacity: 0.5;
+    animation: blossomFloat 3s ease-in-out infinite;
+}
+
+.gioi-thieu h2 {
+    color: #ff69b4;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(255, 181, 221, 0.5);
+}
+
+.gioi-thieu h2::before {
+    content: '✿ ';
+    color: #ff85c1;
+}
+
+.gioi-thieu h2::after {
+    content: ' ✿';
+    color: #ff85c1;
+}
+
+.gioi-thieu p {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 2.2;
+    color: #6b4a5d;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+}
+
+.khu-vuc-bai-viet {
+    padding: 5rem 0;
+}
+
+.khu-vuc-bai-viet h2 {
+    text-align: center;
+    color: #ff69b4;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    font-weight: 900;
+    text-shadow: 3px 3px 0 #ffb5dd;
+    position: relative;
+}
+
+.khu-vuc-bai-viet h2::before {
+    content: '🌸 ';
+    color: #ffd0e5;
+}
+
+.khu-vuc-bai-viet h2::after {
+    content: ' 🌸';
+    color: #ffd0e5;
+}
+
+.bai-viet {
+    background: linear-gradient(135deg, rgba(255, 230, 240, 0.95) 0%, rgba(255, 235, 245, 0.95) 100%);
+    padding: 3.5rem;
+    margin-bottom: 3rem;
+    border-radius: 50px;
+    box-shadow: 0 15px 45px rgba(255, 105, 180, 0.4);
+    border: 4px solid #ff69b4;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.bai-viet::before {
+    content: '🌸';
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 3rem;
+    color: #ffb5dd;
+    opacity: 0.4;
+    animation: sparkleShine 3s infinite;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.bai-viet::after {
+    content: '✿';
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    font-size: 2rem;
+    color: #ff85c1;
+    opacity: 0.5;
+    animation: blossomFloat 3s ease-in-out infinite;
+}
+
+.bai-viet:hover {
+    transform: translateY(-10px) rotate(-1deg);
+    box-shadow: 0 25px 60px rgba(255, 105, 180, 0.6);
+    border-color: #ff69b4;
+}
+
+.bai-viet h3 {
+    color: #ff69b4;
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    text-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.25),
+        0 0 15px rgba(255, 181, 221, 0.4);
+}
+
+.bai-viet h3::before {
+    content: '♪ ';
+    color: #ff85c1;
+}
+
+.bai-viet h4 {
+    color: #ff69b4;
+    font-size: 1.6rem;
+    margin: 2rem 0 1rem;
+    font-weight: 700;
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.2),
+        0 0 10px rgba(255, 181, 221, 0.3);
+}
+
+.bai-viet h4::before {
+    content: '❀ ';
+    color: #ff85c1;
+}
+
+.bai-viet p {
+    font-size: 1.15rem;
+    line-height: 2.2;
+    text-align: justify;
+    color: #5d3a4d;
+    margin-bottom: 1.5rem;
+    text-shadow: 0.5px 0.5px 1px rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+.bai-viet ul, .bai-viet ol {
+    margin: 1.5rem 0 1.5rem 2rem;
+}
+
+.bai-viet li {
+    margin: 0.8rem 0;
+    line-height: 2.2;
+    color: #8b5a7d;
+}
+
+.bai-viet li::marker {
+    color: #ff69b4;
+}
+
+.bai-viet strong {
+    color: #ff69b4;
+    font-weight: 700;
+}
+
+.bai-viet a {
+    color: #ff69b4;
+    text-decoration: none;
+    border-bottom: 2px solid #ffd4e8;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.bai-viet a:hover {
+    border-bottom-color: #ff69b4;
+    color: #ff85c1;
+}
+
+.bai-viet pre {
+    background: rgba(255, 240, 245, 0.8);
+    border: 2px solid #ffd4e8;
+    border-radius: 15px;
+    padding: 1.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.bai-viet code {
+    background: rgba(255, 240, 245, 0.8);
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    color: #ff69b4;
+    border: 1px solid #ffd4e8;
+}
+
+.bai-viet blockquote {
+    background: rgba(255, 245, 248, 0.9);
+    border-left: 5px solid #ff69b4;
+    margin: 1.5rem 0;
+    padding: 1.8rem;
+    border-radius: 15px;
+    font-style: italic;
+    color: #8b5a7d;
+}
+
+.goc-anh {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, rgba(255, 245, 248, 0.5) 0%, rgba(255, 232, 240, 0.5) 100%);
+    margin: 4rem -2rem;
+    padding: 6rem 2rem;
+    border-radius: 0;
+    position: relative;
+}
+
+.goc-anh::before {
+    content: '🦋';
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    font-size: 4rem;
+    opacity: 0.5;
+    animation: blossomFloat 5s ease-in-out infinite;
+}
+
+.goc-anh::after {
+    content: '🌸';
+    position: absolute;
+    bottom: 40px;
+    right: 80px;
+    font-size: 4rem;
+    opacity: 0.5;
+    animation: blossomFloat 4s ease-in-out infinite 1s;
+}
+
+.goc-anh h2 {
+    text-align: center;
+    color: #ff69b4;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    font-weight: 900;
+    text-shadow: 3px 3px 0 #ffb5dd;
+}
+
+.goc-anh h2::before {
+    content: '✿ ';
+    color: #ffd0e5;
+}
+
+.goc-anh h2::after {
+    content: ' ✿';
+    color: #ffd0e5;
+}
+
+.thu-vien-anh {
+    column-count: 3;
+    column-gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .thu-vien-anh {
+        column-count: 2;
+        column-gap: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .thu-vien-anh {
+        column-count: 1;
+    }
+}
+
+.khung-anh {
+    break-inside: avoid;
+    margin-bottom: 3rem;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 
+        0 20px 60px rgba(255, 105, 180, 0.5),
+        inset 0 0 0 8px rgba(255, 192, 219, 0.3);
+    border: 5px solid #ffb5dd;
+    transition: all 0.4s ease;
+    position: relative;
+    background: white;
+}
+
+.khung-anh::before {
+    content: '🌸';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3rem;
+    z-index: 10;
+    opacity: 0.7;
+    transition: opacity 0.4s ease;
+    animation: sparkleShine 2s infinite;
+}
+
+.khung-anh:hover::before {
+    opacity: 1;
+}
+
+.khung-anh:hover {
+    transform: rotate(3deg) scale(1.08);
+    box-shadow: 
+        0 25px 70px rgba(255, 105, 180, 0.6),
+        inset 0 0 0 10px rgba(255, 105, 180, 0.4);
+}
+
+.khung-anh img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+    filter: saturate(1.3) brightness(1.05);
+}
+
+.khung-anh:hover img {
+    transform: scale(1.15);
+    filter: saturate(1.5) brightness(1.1);
+}
+
+.mo-ta-anh {
+    padding: 1.8rem;
+    text-align: center;
+    color: #8b5a7d;
+    font-weight: 700;
+    background: linear-gradient(135deg, rgba(255, 245, 248, 0.98), rgba(255, 250, 252, 0.98));
+    font-size: 1.05rem;
+    position: relative;
+    z-index: 2;
+}
+
+.goc-am-nhac {
+    padding: 6rem 3rem;
+    background: linear-gradient(135deg, rgba(255, 230, 240, 0.95) 0%, rgba(255, 220, 235, 0.95) 100%);
+    margin: 5rem 0;
+    border-radius: 60px;
+    box-shadow: 
+        0 20px 60px rgba(255, 105, 180, 0.45),
+        inset 0 0 50px rgba(255, 192, 219, 0.3);
+    border: 5px dashed #ff69b4;
+    position: relative;
+}
+
+.goc-am-nhac::before {
+    content: '🎵';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    animation: blossomFloat 3s ease-in-out infinite;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.goc-am-nhac h2 {
+    text-align: center;
+    color: #ff69b4;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    font-weight: 900;
+    text-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(255, 181, 221, 0.5);
+}
+
+.goc-am-nhac h2::before {
+    content: '♪ ';
+    color: #ff85c1;
+}
+
+.goc-am-nhac h2::after {
+    content: ' ♪';
+    color: #ff85c1;
+}
+
+.khu-vuc-media {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gioi-thieu-media {
+    color: #ff69b4;
+    font-weight: 900;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    text-align: center;
+    text-shadow: 2px 2px 0 #ffb5dd;
+}
+
+.gioi-thieu-media::before {
+    content: '🌸 ';
+}
+
+.audio-player {
+    width: 100%;
+    margin-bottom: 3rem;
+    border-radius: 50px;
+    box-shadow: 0 10px 40px rgba(255, 105, 180, 0.4);
+    border: 4px solid #ffb5dd;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 40px;
+    box-shadow: 0 15px 50px rgba(255, 105, 180, 0.5);
+    border: 5px solid #ffb5dd;
+}
+
+.video-container video,
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+}
+
+.video-player {
+    width: 100%;
+    border-radius: 40px;
+}
+
+.goc-binh-luan {
+    padding: 6rem 3rem;
+    background: linear-gradient(135deg, rgba(255, 230, 240, 0.95) 0%, rgba(255, 235, 250, 0.95) 100%);
+    margin: 5rem 0;
+    border-radius: 60px;
+    box-shadow: 
+        0 20px 60px rgba(255, 105, 180, 0.45),
+        inset 0 0 50px rgba(255, 192, 219, 0.3);
+    border: 5px dashed #ff69b4;
+    position: relative;
+}
+
+.goc-binh-luan::before {
+    content: '💬';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    animation: heartPulse 2s infinite;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.goc-binh-luan h2 {
+    text-align: center;
+    color: #ff69b4;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    font-weight: 900;
+    text-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(255, 181, 221, 0.5);
+}
+
+.goc-binh-luan h2::before {
+    content: '✿ ';
+    color: #ff85c1;
+}
+
+.goc-binh-luan h2::after {
+    content: ' ✿';
+    color: #ff85c1;
+}
+
+.khu-vuc-form {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.khu-vuc-form > p {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    color: #6b4a5d;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.form-binh-luan {
+    background: rgba(255, 230, 240, 0.9);
+    padding: 4rem;
+    border-radius: 50px;
+    box-shadow: inset 0 0 30px rgba(255, 105, 180, 0.3);
+    border: 4px solid #ff69b4;
+}
+
+.form-group {
+    margin-bottom: 2.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: #ff69b4;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.2),
+        0 0 10px rgba(255, 181, 221, 0.3);
+}
+
+.form-group label::before {
+    content: '🌸 ';
+    color: #ff85c1;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border: 4px solid rgba(255, 181, 221, 0.5);
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-family: inherit;
+    background: rgba(255, 255, 255, 0.95);
+    color: #8b5a7d;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ff69b4;
+    box-shadow: 
+        0 0 20px rgba(255, 105, 180, 0.5),
+        inset 0 0 10px rgba(255, 192, 219, 0.3);
+    background: #fff;
+}
+
+.nut-gui {
+    background: linear-gradient(135deg, #ffb5dd 0%, #ff69b4 50%, #ffd0e5 100%);
+    color: #fff;
+    padding: 1.5rem 5rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 40px rgba(255, 105, 180, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nut-gui::before {
+    content: '🌸 ';
+}
+
+.nut-gui::after {
+    content: ' 🌸';
+}
+
+.nut-gui:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 60px rgba(255, 105, 180, 0.8);
+    background: linear-gradient(135deg, #ff69b4 0%, #ffb5dd 50%, #ffd0e5 100%);
+    animation: heartPulse 1s infinite;
+}
+
+#footer {
+    background: linear-gradient(135deg, #ff69b4 0%, #ff85c1 25%, #ffa0cf 50%, #c77dae 75%, #9b5a7d 100%);
+    color: #fff;
+    padding: 6rem 3rem 2rem 3rem;
+    margin-top: 6rem;
+    border-radius: 60px 60px 0 0;
+    box-shadow: 
+        0 -15px 50px rgba(255, 105, 180, 0.5),
+        inset 0 20px 60px rgba(139, 90, 125, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+#footer::before {
+    content: '🌸 ✿ 🌸 ✿ 🌸 ✿ 🌸 ✿ 🌸';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    font-size: 2.5rem;
+    opacity: 0.4;
+    text-align: center;
+    animation: sparkleShine 3s infinite;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+#footer::after {
+    content: '🌸';
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+    font-size: 6rem;
+    opacity: 0.2;
+    animation: blossomFloat 6s ease-in-out infinite;
+}
+
+.thong-tin-footer {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 4rem;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 3rem;
+}
+
+.nhom-thuc-hien,
+.lien-he,
+.cap-nhat {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 2.5rem;
+    border-radius: 30px;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+}
+
+.nhom-thuc-hien:hover,
+.lien-he:hover,
+.cap-nhat:hover {
+    transform: translateY(-10px);
+    box-shadow: 
+        0 20px 50px rgba(0, 0, 0, 0.3),
+        inset 0 0 30px rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.thong-tin-footer h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+    border-bottom: 4px dashed rgba(255, 255, 255, 0.6);
+    padding-bottom: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+.thong-tin-footer h3::before {
+    content: '🌸 ';
+    font-size: 1.8rem;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+.thong-tin-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.thong-tin-footer li {
+    padding: 1.2rem 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.thong-tin-footer li:last-child {
+    border-bottom: none;
+}
+
+.thong-tin-footer li::before {
+    content: '✿ ';
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
+}
+
+.thong-tin-footer li:hover {
+    padding-left: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.thong-tin-footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.thong-tin-footer a:hover {
+    text-shadow: 
+        0 0 15px rgba(255, 255, 255, 1),
+        2px 2px 6px rgba(0, 0, 0, 0.6);
+    letter-spacing: 1px;
+}
+
+.lien-he p,
+.cap-nhat p {
+    font-size: 1.15rem;
+    margin: 1.5rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    line-height: 1.8;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border-left: 4px solid rgba(255, 255, 255, 0.6);
+}
+
+.lien-he p strong,
+.cap-nhat p strong {
+    color: #fff;
+    font-weight: 900;
+    text-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.6),
+        0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.copyright {
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-top: 3rem;
+    border-top: 4px dashed rgba(255, 255, 255, 0.5);
+    font-size: 1.15rem;
+    text-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.6),
+        0 0 15px rgba(255, 255, 255, 0.4);
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 2rem;
+    position: relative;
+}
+
+.copyright::before {
+    content: '© ';
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.copyright::after {
+    content: ' ✿';
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    animation: sparkleShine 2s infinite;
+}
+
+@media (max-width: 768px) {
+    #header {
+        padding: 3rem 1.5rem;
+    }
+
+    #header::before {
+        font-size: 1.8rem;
+    }
+
+    #header::after {
+        font-size: 3rem;
+    }
+
+    .ten-bao {
+        font-size: 2.8rem;
+        letter-spacing: 2px;
+    }
+
+    .slogan {
+        font-size: 1.2rem;
+    }
+
+    #content {
+        padding: 2rem 1rem;
+    }
+
+    .gioi-thieu,
+    .bai-viet,
+    .goc-am-nhac,
+    .goc-binh-luan {
+        padding: 2.5rem;
+        border-radius: 30px;
+    }
+
+    .form-binh-luan {
+        padding: 2.5rem;
+        border-radius: 30px;
+    }
+
+    .gioi-thieu h2,
+    .khu-vuc-bai-viet h2,
+    .goc-anh h2,
+    .goc-am-nhac h2,
+    .goc-binh-luan h2 {
+        font-size: 2.5rem;
+    }
+
+    .bai-viet h3 {
+        font-size: 1.8rem;
+    }
+
+    .thu-vien-anh {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .goc-anh {
+        padding: 4rem 2rem;
+        margin: 3rem -1rem;
+    }
+
+    .goc-anh::before,
+    .goc-anh::after {
+        font-size: 2.5rem;
+    }
+
+    #footer {
+        padding: 4rem 2rem 2rem 2rem;
+        border-radius: 40px 40px 0 0;
+    }
+
+    #footer::before {
+        font-size: 1.8rem;
+        top: 20px;
+    }
+
+    #footer::after {
+        font-size: 4rem;
+    }
+
+    .thong-tin-footer {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .nhom-thuc-hien,
+    .lien-he,
+    .cap-nhat {
+        padding: 2rem;
+        border-radius: 20px;
+    }
+
+    .thong-tin-footer h3 {
+        font-size: 1.6rem;
+    }
+
+    .copyright {
+        font-size: 1rem;
+        padding: 1.5rem;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ten-bao {
+        font-size: 2rem;
+    }
+
+    .gioi-thieu,
+    .bai-viet,
+    .goc-binh-luan,
+    .goc-am-nhac {
+        padding: 2rem;
+        border-radius: 25px;
+    }
+
+    .form-binh-luan {
+        padding: 2rem;
+        border-radius: 25px;
+    }
+
+    .nut-gui {
+        padding: 1.2rem 2.5rem;
+        font-size: 1rem;
+    }
+
+    .khu-vuc-bai-viet {
+        padding: 3rem 0;
+    }
+
+    #footer {
+        padding: 3rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    .nhom-thuc-hien,
+    .lien-he,
+    .cap-nhat {
+        padding: 1.5rem;
+    }
+
+    .thong-tin-footer h3 {
+        font-size: 1.4rem;
+    }
+
+    .copyright {
+        font-size: 0.95rem;
+        padding: 1.2rem;
+    }
+}

@@ -4,7 +4,7 @@ Công cụ tạo website báo tường lớp học với 10 theme CSS đẹp m�
 
 ## ✨ Tính năng
 
-- 🎨 **10 Theme CSS đa dạng**: Modern Gradient, Vintage Magazine, Ocean Wave, Swiss Minimalist, Forest Nature, Cyberpunk Neon, Sunset Beach, Kawaii Pastel, Corporate Professional, Art Deco Luxury
+- 🎨 **15 Theme CSS đa dạng**: Modern Gradient, Vintage Magazine, Ocean Wave, Swiss Minimalist, Forest Nature, Cyberpunk Neon, Sunset Beach, Kawaii Pastel, Corporate Professional, Art Deco Luxury, Cherry Blossom Dream, Lavender Fantasy, Peach Bubble Tea, Dark Knight, Industrial Steel
 - 🌐 **Hỗ trợ tiếng Việt đầy đủ**: Tất cả font chữ đều hỗ trợ tiếng Việt chuẩn với dấu thanh
 - 🖼️ **Quản lý nội dung dễ dàng**: Thêm bài viết, hình ảnh, audio/video
 - 📱 **Responsive Design**: Hiển thị tốt trên mọi thiết bị
@@ -43,6 +43,7 @@ ProjectT1/
 
 ## 🎨 Danh sách Themes
 
+### Themes Hiện Đại & Cổ Điển (1-7)
 1. **Modern Gradient** - Hiện đại với gradient màu tím
 2. **Vintage Magazine** - Phong cách báo giấy cổ điển
 3. **Ocean Wave** - Sóng biển xanh tươi mát
@@ -50,9 +51,18 @@ ProjectT1/
 5. **Forest Nature** - Rừng xanh thiên nhiên
 6. **Cyberpunk Neon** - Tương lai với neon sáng
 7. **Sunset Beach** - Hoàng hôn biển lãng mạn
+
+### Themes Dễ Thương & Nữ Tính (8, 11-13)
 8. **Kawaii Pastel** - Dễ thương phong cách Nhật
+11. **Cherry Blossom Dream** 🌸 - Hoa anh đào lãng mạn với màu hồng pastel
+12. **Lavender Fantasy** ✨ - Tím lavender mơ màng với hiệu ứng lấp lánh
+13. **Peach Bubble Tea** 🧋 - Đào sữa ngọt ngào với màu đào ấm áp
+
+### Themes Sang Trọng & Mạnh Mẽ (9-10, 14-15)
 9. **Corporate Professional** - Chuyên nghiệp doanh nghiệp
 10. **Art Deco Luxury** - Xa hoa nghệ thuật
+14. **Dark Knight** ⚔️ - Hiệp sĩ bóng tối với màu đỏ trên nền đen
+15. **Industrial Steel** ⚙️ - Thép công nghiệp với màu xanh kim loại
 
 ## 🔤 Font chữ
 

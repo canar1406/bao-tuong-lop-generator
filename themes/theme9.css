@@ -1,0 +1,504 @@
+/* Theme 9: Corporate Professional - Chuyên Nghiệp Doanh Nghiệp */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    color: #2c3e50;
+    background: linear-gradient(135deg, #ecf0f1 0%, #e8eaec 100%);
+    background-attachment: fixed;
+}
+
+#header {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 50%, #34568b 100%);
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(30, 58, 95, 0.4);
+    position: relative;
+}
+
+#header::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(to right, #c9a961, #d4af37, #c9a961);
+}
+
+.banner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.ten-bao {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Georgia', serif;
+}
+
+.slogan {
+    font-size: 1.3rem;
+    font-style: italic;
+    opacity: 0.95;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+#content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.gioi-thieu {
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    padding: 4rem;
+    margin: 3rem 0;
+    border-left: 6px solid #c9a961;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.gioi-thieu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 80px;
+    background: linear-gradient(to bottom, #d4af37, #c9a961);
+}
+
+.gioi-thieu h2 {
+    color: #1e3a5f;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-family: 'Georgia', serif;
+    border-bottom: 3px solid #e8eaec;
+    padding-bottom: 1rem;
+}
+
+.gioi-thieu p {
+    font-size: 1.15rem;
+    text-align: justify;
+    line-height: 2;
+    color: #34495e;
+}
+
+.khu-vuc-bai-viet {
+    padding: 4rem 0;
+}
+
+.khu-vuc-bai-viet h2 {
+    text-align: center;
+    color: #1e3a5f;
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    position: relative;
+    font-family: 'Georgia', serif;
+}
+
+.khu-vuc-bai-viet h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, transparent, #c9a961, transparent);
+}
+
+.bai-viet {
+    background: #fff;
+    padding: 3.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border-top: 4px solid #2c5282;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.bai-viet::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, #1e3a5f, #2c5282, #34568b);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.bai-viet:hover {
+    transform: translateX(10px);
+    box-shadow: 0 12px 45px rgba(0, 0, 0, 0.18);
+}
+
+.bai-viet:hover::before {
+    opacity: 1;
+}
+
+.tieu-de-bai {
+    color: #1e3a5f;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-family: 'Georgia', serif;
+}
+
+.noi-dung {
+    font-size: 1.1rem;
+    line-height: 2;
+    text-align: justify;
+    color: #34495e;
+    margin-bottom: 2rem;
+}
+
+.tac-gia {
+    text-align: right;
+    font-style: italic;
+    color: #7f8c8d;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid #ecf0f1;
+}
+
+.goc-anh {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8eaec 100%);
+    margin: 4rem -2rem;
+    padding: 5rem 2rem;
+}
+
+.goc-anh h2 {
+    text-align: center;
+    color: #1e3a5f;
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-family: 'Georgia', serif;
+    position: relative;
+}
+
+.goc-anh h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, transparent, #c9a961, transparent);
+}
+
+.thu-vien-anh {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 2.5rem;
+}
+
+.khung-anh {
+    background: #fff;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.khung-anh::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(to right, #1e3a5f, #2c5282, #34568b);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.khung-anh:hover::before {
+    transform: scaleX(1);
+}
+
+.khung-anh:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.khung-anh img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+    filter: grayscale(0.1);
+}
+
+.khung-anh:hover img {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+
+.mo-ta-anh {
+    padding: 1.8rem;
+    text-align: center;
+    color: #34495e;
+    font-weight: 600;
+    background: #f8f9fa;
+    font-size: 1rem;
+}
+
+.goc-am-nhac {
+    padding: 5rem 3rem;
+    background: #fff;
+    margin: 5rem 0;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+    border-top: 5px solid #c9a961;
+    border-bottom: 5px solid #c9a961;
+}
+
+.goc-am-nhac h2 {
+    text-align: center;
+    color: #1e3a5f;
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-family: 'Georgia', serif;
+}
+
+.khu-vuc-media {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gioi-thieu-media {
+    color: #2c5282;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+.audio-player {
+    width: 100%;
+    margin-bottom: 3rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e8eaec;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    border: 5px solid #e8eaec;
+}
+
+.video-container video,
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-player {
+    width: 100%;
+}
+
+.goc-binh-luan {
+    padding: 5rem 3rem;
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    margin: 5rem 0;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+    border-left: 6px solid #c9a961;
+}
+
+.goc-binh-luan h2 {
+    text-align: center;
+    color: #1e3a5f;
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-family: 'Georgia', serif;
+}
+
+.khu-vuc-form {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.khu-vuc-form > p {
+    text-align: center;
+    font-size: 1.15rem;
+    margin-bottom: 3rem;
+    color: #34495e;
+    font-style: italic;
+}
+
+.form-binh-luan {
+    background: #fff;
+    padding: 4rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e8eaec;
+}
+
+.form-group {
+    margin-bottom: 2.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: #1e3a5f;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    font-family: 'Georgia', serif;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1.3rem;
+    border: 2px solid #e8eaec;
+    font-size: 1.05rem;
+    font-family: inherit;
+    background: #fff;
+    color: #2c3e50;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2c5282;
+    box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.1);
+}
+
+.nut-gui {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+    color: #fff;
+    padding: 1.3rem 4rem;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(30, 58, 95, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Georgia', serif;
+}
+
+.nut-gui:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(30, 58, 95, 0.5);
+    background: linear-gradient(135deg, #2c5282 0%, #34568b 100%);
+}
+
+#footer {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 50%, #34568b 100%);
+    color: #fff;
+    padding: 5rem 2rem 3rem 2rem;
+    margin-top: 6rem;
+    box-shadow: 0 -10px 40px rgba(30, 58, 95, 0.3);
+    position: relative;
+}
+
+#footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(to right, #c9a961, #d4af37, #c9a961);
+}
+
+.thong-tin-footer {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.thong-tin-footer h3 {
+    color: #d4af37;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-bottom: 3px solid rgba(212, 175, 55, 0.4);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'Georgia', serif;
+}
+
+.thong-tin-footer ul {
+    list-style: none;
+}
+
+.thong-tin-footer li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.thong-tin-footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.05rem;
+}
+
+.thong-tin-footer a:hover {
+    color: #d4af37;
+    padding-left: 10px;
+}
+
+.lien-he p,
+.cap-nhat p {
+    font-size: 1.05rem;
+    margin: 1rem 0;
+    color: #ecf0f1;
+}
+
+.copyright {
+    text-align: center;
+    padding: 3rem 0 1rem 0;
+    margin-top: 3rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+    .ten-bao {
+        font-size: 2.5rem;
+    }
+    .thu-vien-anh {
+        grid-template-columns: 1fr;
+    }
+}

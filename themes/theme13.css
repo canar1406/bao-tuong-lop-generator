@@ -1,0 +1,758 @@
+/* Theme 13: Peach Bubble Tea - Trà Sữa Đào Ngọt Ngào */
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@400;600;700&family=Comfortaa:wght@400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    line-height: 1.8;
+    color: #8b5a3c;
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe4cc 50%, #ffd4a3 100%);
+    background-attachment: fixed;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#header {
+    background: linear-gradient(135deg, #ff9f6b 0%, #ffc299 50%, #ffd4a3 100%);
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(255, 159, 107, 0.4);
+}
+
+.banner {
+    padding: 1rem;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.ten-bao {
+    font-family: 'Mali', cursive;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(139, 90, 60, 0.3);
+    letter-spacing: 3px;
+}
+
+.slogan {
+    font-size: 1.3rem;
+    opacity: 0.95;
+    font-weight: 400;
+}
+
+#content {
+    max-width: 1400px;
+    margin: 3rem auto;
+    padding: 3rem 2rem;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 15px 40px rgba(255, 159, 107, 0.2);
+    border-radius: 20px;
+}
+
+.gioi-thieu {
+    padding: 4rem 3rem;
+    background: linear-gradient(135deg, rgba(255, 240, 230, 0.95) 0%, rgba(255, 225, 200, 0.9) 100%);
+    margin: 4rem 0;
+    border-radius: 50px;
+    box-shadow: 
+        0 15px 40px rgba(255, 159, 107, 0.4),
+        inset 0 0 40px rgba(255, 194, 153, 0.3);
+    border: 5px dashed #ff9f6b;
+    position: relative;
+}
+
+.gioi-thieu::after {
+    content: '🧁';
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 5rem;
+    opacity: 0.3;
+    animation: bounce 3s infinite;
+}
+
+.gioi-thieu h2 {
+    font-family: 'Mali', cursive;
+    color: #d97a4a;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.gioi-thieu p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #6b4028;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.khu-vuc-bai-viet {
+    padding: 2rem;
+    margin: 3rem 0;
+}
+
+.khu-vuc-bai-viet h2 {
+    font-family: 'Mali', cursive;
+    color: #ff9f6b;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    border-bottom: 3px solid #ff9f6b;
+    padding-bottom: 1rem;
+    font-weight: 700;
+}
+
+.bai-viet {
+    background: linear-gradient(135deg, rgba(255, 245, 235, 0.95) 0%, rgba(255, 232, 210, 0.9) 100%);
+    padding: 4rem 3rem;
+    margin: 3rem 0;
+    border-radius: 50px;
+    border: 4px dashed #ff9f6b;
+    box-shadow: 
+        0 15px 40px rgba(255, 159, 107, 0.4),
+        inset 0 0 30px rgba(255, 194, 153, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bai-viet:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 159, 107, 0.4);
+}
+
+.bai-viet h3 {
+    font-family: 'Mali', cursive;
+    color: #ff9f6b;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.bai-viet h4 {
+    color: #d97a4a;
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    font-weight: 600;
+    border-left: 4px solid #ff9f6b;
+    padding-left: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.bai-viet p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #6b4028;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.bai-viet ul, .bai-viet ol {
+    margin: 1.5rem 0 1.5rem 2rem;
+}
+
+.bai-viet li {
+    margin: 0.8rem 0;
+    line-height: 1.8;
+    color: #8b5a3c;
+}
+
+.bai-viet strong {
+    color: #ff9f6b;
+    font-weight: 700;
+}
+
+.bai-viet a {
+    color: #ff9f6b;
+    text-decoration: none;
+    border-bottom: 2px solid #ffd4a3;
+    transition: all 0.3s ease;
+}
+
+.bai-viet a:hover {
+    border-bottom-color: #ff9f6b;
+    color: #ffc299;
+}
+
+.bai-viet pre {
+    background: #fff8f0;
+    border: 1px solid #ffd4a3;
+    border-radius: 8px;
+    padding: 1.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.bai-viet code {
+    background: #fff8f0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    color: #ff9f6b;
+}
+
+.bai-viet blockquote {
+    background: #fffaf5;
+    border-left: 4px solid #ff9f6b;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    font-style: italic;
+    color: #8b5a3c;
+}
+
+.goc-anh {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, rgba(255, 248, 240, 0.5) 0%, rgba(255, 237, 220, 0.5) 100%);
+    margin: 4rem -2rem;
+    border-radius: 0;
+    position: relative;
+}
+
+.goc-anh::before {
+    content: '🍑';
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    font-size: 4rem;
+    opacity: 0.5;
+    animation: bounce 5s ease-in-out infinite;
+}
+
+.goc-anh::after {
+    content: '🧁';
+    position: absolute;
+    bottom: 40px;
+    right: 80px;
+    font-size: 4rem;
+    opacity: 0.5;
+    animation: bounce 4s ease-in-out infinite 1s;
+}
+
+.goc-anh h2 {
+    font-family: 'Mali', cursive;
+    color: #ff9f6b;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 3px 3px 0 #ffc299;
+}
+
+.goc-anh h2::before {
+    content: '🍑 ';
+    color: #ffd4a3;
+}
+
+.thu-vien-anh {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.khung-anh {
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 
+        0 10px 40px rgba(255, 159, 107, 0.4),
+        inset 0 0 0 4px rgba(255, 194, 153, 0.5);
+    transition: all 0.4s ease;
+    border: 4px solid #ffc299;
+    background: white;
+    position: relative;
+}
+
+.khung-anh::before {
+    content: '🍑';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2.5rem;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.khung-anh:hover::before {
+    opacity: 1;
+    animation: bounce 1.5s infinite;
+}
+
+.khung-anh:hover {
+    transform: translateY(-10px) rotate(2deg) scale(1.03);
+    box-shadow: 
+        0 15px 50px rgba(255, 159, 107, 0.5),
+        inset 0 0 0 6px rgba(255, 159, 107, 0.6);
+}
+
+.khung-anh img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.khung-anh:hover img {
+    transform: scale(1.1);
+}
+
+.mo-ta-anh {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #fff8f0 0%, #fff0e6 100%);
+    color: #6b4028;
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    border-top: 3px solid #ffc299;
+}
+
+.goc-am-nhac {
+    padding: 6rem 3rem;
+    margin: 5rem 0;
+    background: linear-gradient(135deg, rgba(255, 245, 235, 0.95) 0%, rgba(255, 232, 210, 0.9) 100%);
+    border-radius: 60px;
+    box-shadow: 
+        0 20px 60px rgba(255, 159, 107, 0.45),
+        inset 0 0 50px rgba(255, 194, 153, 0.3);
+    border: 5px dashed #ff9f6b;
+    position: relative;
+}
+
+.goc-am-nhac::before {
+    content: '🎵';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    animation: bounce 3s ease-in-out infinite;
+}
+
+.goc-am-nhac h2 {
+    font-family: 'Mali', cursive;
+    color: #d97a4a;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(255, 159, 107, 0.5);
+}
+
+.audio-player {
+    width: 100%;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    border: 2px solid #ffd4a3;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(255, 159, 107, 0.2);
+}
+
+.video-container video,
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.goc-binh-luan {
+    padding: 6rem 3rem;
+    margin: 5rem 0;
+    background: linear-gradient(135deg, rgba(255, 245, 235, 0.95) 0%, rgba(255, 232, 210, 0.9) 100%);
+    border-radius: 60px;
+    box-shadow: 
+        0 20px 60px rgba(255, 159, 107, 0.45),
+        inset 0 0 50px rgba(255, 194, 153, 0.3);
+    border: 5px dashed #ff9f6b;
+    position: relative;
+}
+
+.goc-binh-luan::before {
+    content: '💬';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    animation: bounce 3s ease-in-out infinite;
+}
+
+.goc-binh-luan h2 {
+    font-family: 'Mali', cursive;
+    color: #d97a4a;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(255, 159, 107, 0.5);
+}
+
+.form-binh-luan {
+    max-width: 900px;
+    margin: 3rem auto 0;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 3rem;
+    border-radius: 40px;
+    border: 3px solid #ffc299;
+    box-shadow: 0 10px 30px rgba(255, 159, 107, 0.3);
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    color: #d97a4a;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1.2rem;
+    border: 3px solid #ffc299;
+    border-radius: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    color: #6b4028;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ff9f6b;
+    box-shadow: 0 0 20px rgba(255, 159, 107, 0.4);
+    background: white;
+}
+
+.form-group textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.goc-binh-luan input,
+.goc-binh-luan textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 2px solid #ffd4a3;
+    border-radius: 8px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1rem;
+    background: #fff;
+    color: #8b5a3c;
+    transition: border-color 0.3s ease;
+}
+
+.goc-binh-luan input:focus,
+.goc-binh-luan textarea:focus {
+    outline: none;
+    border-color: #ff9f6b;
+}
+
+.goc-binh-luan textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.nut-gui {
+    background: linear-gradient(135deg, #ff9f6b 0%, #ffc299 100%);
+    color: white;
+    padding: 1.3rem 3.5rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(255, 159, 107, 0.4);
+    letter-spacing: 1px;
+}
+
+.nut-gui::before {
+    content: '🧁 ';
+}
+
+.nut-gui:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 35px rgba(255, 159, 107, 0.6);
+    background: linear-gradient(135deg, #e88a56 0%, #ffb384 100%);
+}
+
+#footer {
+    background: linear-gradient(135deg, #d97a4a 0%, #ff9f6b 50%, #ffc299 100%);
+    color: #fff;
+    padding: 6rem 3rem 2rem 3rem;
+    margin-top: 6rem;
+    border-radius: 60px 60px 0 0;
+    box-shadow: 
+        0 -15px 50px rgba(255, 159, 107, 0.6),
+        inset 0 20px 60px rgba(217, 122, 74, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+#footer::before {
+    content: '🍑 🧁 🍑 🧁 🍑';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    font-size: 2.5rem;
+    opacity: 0.4;
+    text-align: center;
+    animation: bounce 3s infinite;
+}
+
+#footer::after {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 212, 163, 0.3) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: rotate 15s linear infinite;
+}
+
+.thong-tin-footer {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 4rem;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 3rem;
+}
+
+.nhom-thuc-hien,
+.lien-he,
+.cap-nhat {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 2.5rem;
+    border-radius: 30px;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+}
+
+.nhom-thuc-hien:hover,
+.lien-he:hover,
+.cap-nhat:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 
+        0 20px 50px rgba(0, 0, 0, 0.3),
+        inset 0 0 30px rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.thong-tin-footer h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+    border-bottom: 4px dashed rgba(255, 255, 255, 0.6);
+    padding-bottom: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(255, 255, 255, 0.4);
+    text-align: center;
+    font-family: 'Mali', cursive;
+}
+
+.thong-tin-footer h3::before {
+    content: '🍑 ';
+    font-size: 1.8rem;
+}
+
+.thong-tin-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.thong-tin-footer li {
+    padding: 1.2rem 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.thong-tin-footer li:last-child {
+    border-bottom: none;
+}
+
+.thong-tin-footer li::before {
+    content: '🧁 ';
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+}
+
+.thong-tin-footer li:hover {
+    padding-left: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.lien-he p,
+.cap-nhat p {
+    font-size: 1.15rem;
+    margin: 1.5rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    line-height: 1.8;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border-left: 4px solid rgba(255, 255, 255, 0.6);
+}
+
+.lien-he p strong,
+.cap-nhat p strong {
+    color: #fff;
+    font-weight: 900;
+    text-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.6),
+        0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.thong-tin-footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.thong-tin-footer a:hover {
+    text-shadow: 
+        0 0 15px rgba(255, 255, 255, 1),
+        2px 2px 6px rgba(0, 0, 0, 0.6);
+    letter-spacing: 1px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-top: 3rem;
+    border-top: 4px dashed rgba(255, 255, 255, 0.5);
+    font-size: 1.15rem;
+    text-shadow: 
+        3px 3px 6px rgba(0, 0, 0, 0.6),
+        0 0 15px rgba(255, 255, 255, 0.4);
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 2rem;
+    position: relative;
+}
+
+.copyright::before {
+    content: '© ';
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.copyright::after {
+    content: ' 🍑';
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    animation: bounce 2s infinite;
+}
+
+@media (max-width: 768px) {
+    .ten-bao {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .slogan {
+        font-size: 1.1rem;
+    }
+
+    #content {
+        padding: 2rem 1rem;
+        margin: 2rem auto;
+    }
+
+    .gioi-thieu,
+    .bai-viet {
+        padding: 2rem;
+    }
+
+    .gioi-thieu h2,
+    .khu-vuc-bai-viet h2,
+    .khu-vuc-hinh-anh h2,
+    .khu-vuc-nhac-video h2,
+    .khu-vuc-binh-luan h2 {
+        font-size: 2rem;
+    }
+
+    .bai-viet h3 {
+        font-size: 1.6rem;
+    }
+
+    .danh-sach-hinh-anh {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    #footer {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ten-bao {
+        font-size: 2rem;
+    }
+
+    .gioi-thieu,
+    .bai-viet,
+    .khu-vuc-binh-luan {
+        padding: 1.5rem;
+    }
+}

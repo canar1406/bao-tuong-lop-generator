@@ -1,0 +1,492 @@
+/* Theme 5: Forest Nature - Rừng Xanh Thiên Nhiên */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Nunito:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    line-height: 1.8;
+    color: #2d5016;
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    background-attachment: fixed;
+}
+
+#header {
+    background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 50%, #388e3c 100%);
+    color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(27, 94, 32, 0.3);
+}
+
+#header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.08) 0%, transparent 50%);
+    animation: leafFloat 8s ease-in-out infinite;
+}
+
+@keyframes leafFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.banner {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.ten-bao {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+}
+
+.slogan {
+    font-size: 1.4rem;
+    opacity: 0.95;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+#content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.gioi-thieu {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 4rem;
+    margin: 3rem 0;
+    border-radius: 40px 10px;
+    box-shadow: 
+        0 10px 40px rgba(27, 94, 32, 0.15),
+        inset 0 0 0 3px rgba(76, 175, 80, 0.3);
+    position: relative;
+}
+
+.gioi-thieu::before {
+    content: '🌿';
+    position: absolute;
+    top: -30px;
+    left: 40px;
+    font-size: 4rem;
+}
+
+.gioi-thieu h2 {
+    color: #1b5e20;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+
+.gioi-thieu p {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 2;
+    color: #33691e;
+}
+
+.khu-vuc-bai-viet {
+    padding: 4rem 0;
+}
+
+.khu-vuc-bai-viet h2 {
+    text-align: center;
+    color: #1b5e20;
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.khu-vuc-bai-viet h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 4px;
+    background: linear-gradient(to right, transparent, #4caf50, transparent);
+}
+
+.bai-viet {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3.5rem;
+    margin-bottom: 3rem;
+    border-radius: 10px 40px;
+    box-shadow: 0 8px 30px rgba(27, 94, 32, 0.15);
+    border-left: 8px solid #66bb6a;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.bai-viet::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, rgba(76, 175, 80, 0.2), transparent);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.bai-viet:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(27, 94, 32, 0.25);
+    border-left-color: #43a047;
+}
+
+.tieu-de-bai {
+    color: #1b5e20;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px dashed rgba(76, 175, 80, 0.3);
+    font-family: 'Nunito', sans-serif;
+}
+
+.noi-dung {
+    font-size: 1.15rem;
+    line-height: 2;
+    text-align: justify;
+    color: #33691e;
+    margin-bottom: 1.5rem;
+}
+
+.tac-gia {
+    text-align: right;
+    font-style: italic;
+    color: #558b2f;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.goc-anh {
+    padding: 5rem 0;
+    background: rgba(255, 255, 255, 0.6);
+    margin: 4rem -2rem;
+    padding: 5rem 2rem;
+    border-radius: 50px;
+}
+
+.goc-anh h2 {
+    text-align: center;
+    color: #1b5e20;
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+
+.thu-vien-anh {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.khung-anh {
+    background: #fff;
+    border: none;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(27, 94, 32, 0.2);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.khung-anh::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(27, 94, 32, 0.3), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 1;
+}
+
+.khung-anh:hover::before {
+    opacity: 1;
+}
+
+.khung-anh:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 20px 50px rgba(27, 94, 32, 0.35);
+}
+
+.khung-anh img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.khung-anh:hover img {
+    transform: scale(1.1);
+}
+
+.mo-ta-anh {
+    padding: 1.5rem;
+    text-align: center;
+    color: #2d5016;
+    font-weight: 600;
+    background: rgba(232, 245, 233, 0.95);
+    position: relative;
+    z-index: 2;
+}
+
+.goc-am-nhac {
+    padding: 5rem 0;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 4rem 0;
+    border-radius: 50px;
+    box-shadow: 0 15px 50px rgba(27, 94, 32, 0.2);
+}
+
+.goc-am-nhac h2 {
+    text-align: center;
+    color: #1b5e20;
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+
+.khu-vuc-media {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.gioi-thieu-media {
+    color: #2e7d32;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.audio-player {
+    width: 100%;
+    margin-bottom: 3rem;
+    border-radius: 50px;
+    box-shadow: 0 8px 25px rgba(27, 94, 32, 0.2);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 10px 40px rgba(27, 94, 32, 0.25);
+}
+
+.video-container video,
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.video-player {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.goc-binh-luan {
+    padding: 5rem 0;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 4rem 0;
+    border-radius: 50px;
+    box-shadow: 0 15px 50px rgba(27, 94, 32, 0.2);
+}
+
+.goc-binh-luan h2 {
+    text-align: center;
+    color: #1b5e20;
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+
+.khu-vuc-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.khu-vuc-form > p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #33691e;
+}
+
+.form-binh-luan {
+    background: rgba(232, 245, 233, 0.5);
+    padding: 3rem;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 2px rgba(76, 175, 80, 0.3);
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    color: #2e7d32;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1.2rem;
+    border: 2px solid rgba(76, 175, 80, 0.3);
+    border-radius: 20px;
+    font-size: 1.05rem;
+    font-family: inherit;
+    background: rgba(255, 255, 255, 0.9);
+    color: #2d5016;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+    background: #fff;
+}
+
+.nut-gui {
+    background: linear-gradient(135deg, #2e7d32 0%, #43a047 100%);
+    color: #fff;
+    padding: 1.3rem 4rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nut-gui:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(46, 125, 50, 0.5);
+    background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+}
+
+#footer {
+    background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+    color: #fff;
+    padding: 5rem 2rem 3rem 2rem;
+    margin-top: 6rem;
+    border-radius: 50px 50px 0 0;
+    box-shadow: 0 -10px 40px rgba(27, 94, 32, 0.3);
+}
+
+.thong-tin-footer {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.thong-tin-footer h3 {
+    color: #c8e6c9;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-bottom: 3px solid rgba(200, 230, 201, 0.3);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.thong-tin-footer ul {
+    list-style: none;
+}
+
+.thong-tin-footer li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.thong-tin-footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.05rem;
+}
+
+.thong-tin-footer a:hover {
+    color: #c8e6c9;
+    padding-left: 10px;
+}
+
+.lien-he p,
+.cap-nhat p {
+    font-size: 1.05rem;
+    margin: 1rem 0;
+}
+
+.copyright {
+    text-align: center;
+    padding: 3rem 0 1rem 0;
+    margin-top: 3rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+    .ten-bao {
+        font-size: 3rem;
+    }
+    .thu-vien-anh {
+        grid-template-columns: 1fr;
+    }
+}

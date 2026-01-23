@@ -1,0 +1,419 @@
+/* Theme 4: Swiss Minimalist - Thụy Sĩ Tối Giản */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.8;
+    color: #000;
+    background: #fff;
+    font-weight: 300;
+}
+
+#header {
+    background: #000;
+    color: #fff;
+    padding: 5rem 2rem;
+    text-align: left;
+    border-bottom: 2px solid #000;
+}
+
+.banner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.ten-bao {
+    font-size: 5rem;
+    font-weight: 100;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.slogan {
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-top: 2rem;
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+
+#content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+.gioi-thieu {
+    padding: 0;
+    background: transparent;
+    border-left: 3px solid #000;
+    padding-left: 4rem;
+    margin: 5rem 0;
+}
+
+.gioi-thieu h2 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    letter-spacing: -1px;
+}
+
+.gioi-thieu p {
+    font-size: 1.2rem;
+    line-height: 2;
+    max-width: 800px;
+}
+
+.khu-vuc-bai-viet {
+    padding: 0;
+    margin: 8rem 0;
+}
+
+.khu-vuc-bai-viet h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 4rem;
+    letter-spacing: -2px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 2rem;
+}
+
+.bai-viet {
+    background: transparent;
+    border: none;
+    border-top: 2px solid #e0e0e0;
+    padding: 4rem 0;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.bai-viet:first-child {
+    border-top: none;
+}
+
+.tieu-de-bai {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.5px;
+    padding: 0;
+    border: none;
+}
+
+.noi-dung {
+    font-size: 1.1rem;
+    line-height: 2;
+    text-align: left;
+    font-weight: 300;
+    max-width: 700px;
+}
+
+.tac-gia {
+    grid-column: 2;
+    text-align: left;
+    font-style: normal;
+    color: #666;
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.goc-anh {
+    padding: 0;
+    margin: 8rem 0;
+}
+
+.goc-anh h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 4rem;
+    letter-spacing: -2px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 2rem;
+}
+
+.thu-vien-anh {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.khung-anh {
+    background: #000;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.khung-anh img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(30%);
+    transition: all 0.4s ease;
+}
+
+.khung-anh:hover img {
+    filter: grayscale(0%);
+    opacity: 0.9;
+}
+
+.mo-ta-anh {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    text-align: left;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    font-weight: 400;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.khung-anh:hover .mo-ta-anh {
+    opacity: 1;
+}
+
+.goc-am-nhac {
+    padding: 5rem 0;
+    background: #f5f5f5;
+    margin: 8rem -2rem;
+    padding: 5rem 2rem;
+}
+
+.goc-am-nhac h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 4rem;
+    letter-spacing: -2px;
+    text-align: center;
+}
+
+.khu-vuc-media {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.gioi-thieu-media {
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.audio-player {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-container video,
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-player {
+    width: 100%;
+}
+
+.goc-binh-luan {
+    padding: 0;
+    background: transparent;
+    margin: 8rem 0;
+}
+
+.goc-binh-luan h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 4rem;
+    letter-spacing: -2px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 2rem;
+}
+
+.khu-vuc-form {
+    max-width: 700px;
+    margin: 0;
+}
+
+.khu-vuc-form > p {
+    text-align: left;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    font-weight: 300;
+}
+
+.form-binh-luan {
+    background: transparent;
+    padding: 0;
+}
+
+.form-group {
+    margin-bottom: 3rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1.2rem 0;
+    border: none;
+    border-bottom: 2px solid #e0e0e0;
+    font-size: 1.1rem;
+    font-family: inherit;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-bottom-color: #000;
+}
+
+.nut-gui {
+    background: #000;
+    color: #fff;
+    padding: 1.5rem 4rem;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.nut-gui:hover {
+    background: #333;
+}
+
+#footer {
+    background: #000;
+    color: #fff;
+    padding: 5rem 2rem;
+    margin-top: 10rem;
+    border-top: 2px solid #000;
+}
+
+.thong-tin-footer {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+}
+
+.thong-tin-footer h3 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.thong-tin-footer ul {
+    list-style: none;
+}
+
+.thong-tin-footer li {
+    padding: 0.5rem 0;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.thong-tin-footer a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.thong-tin-footer a:hover {
+    opacity: 1;
+}
+
+.lien-he p,
+.cap-nhat p {
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 0.8rem 0;
+}
+
+.copyright {
+    text-align: center;
+    padding: 3rem 0 0 0;
+    margin-top: 4rem;
+    border-top: 1px solid #333;
+    font-weight: 300;
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 1024px) {
+    .bai-viet {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .tac-gia {
+        grid-column: 1;
+    }
+    .thu-vien-anh {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ten-bao {
+        font-size: 3rem;
+    }
+    .thu-vien-anh {
+        grid-template-columns: 1fr;
+    }
+}
