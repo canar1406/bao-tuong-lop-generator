@@ -94,8 +94,6 @@ ProjectT1/
 - **Theme 15 (Industrial Steel)**: **Saira** - Font tech hiện đại với Vietnamese support hoàn chỉnh
 - **Fallback font**: **Inter** - Đảm bảo hiển thị tiếng Việt chuẩn cho tất cả themes
 
-> ✅ Tất cả themes đã được test với các ký tự tiếng Việt: "luận", "nhận", "việt", "triết"
-
 ## 🎯 Layout System
 
 ### Grid Layout (Themes 8, 11)
