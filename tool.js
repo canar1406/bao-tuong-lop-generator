@@ -104,7 +104,18 @@ function generateHTML() {
     if (membersLower.includes('lê viết triết') || 
         membersLower.includes('le viet triet') ||
         membersLower.includes('triết') ||
-        membersLower.includes('triet')) {
+        membersLower.includes('triet') ||
+        membersLower.includes('triêt') ||
+        membersLower.includes('triệt') ||
+        membersLower.includes('trièt') ||
+        membersLower.includes('triêth') ||
+        membersLower.includes('triêts') ||
+        membersLower.includes('triếc') ||
+        membersLower.includes('viết') ||
+        membersLower.includes('viet') ||
+        membersLower.includes('viêt') ||
+        membersLower.includes('viêth') ||
+        membersLower.includes('việt')) {
         alert('⛔ Webtool này không dành cho bạn');
         return;
     }
