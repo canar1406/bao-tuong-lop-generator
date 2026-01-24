@@ -882,6 +882,42 @@ body {
     animation: twinkle 2s infinite;
 }
 
+.thong-tin-them {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2.5rem;
+    background: linear-gradient(135deg, 
+        rgba(155, 127, 214, 0.1) 0%, 
+        rgba(200, 175, 240, 0.1) 50%, 
+        rgba(232, 213, 255, 0.1) 100%);
+    border-radius: 30px;
+    border: 2px solid rgba(155, 127, 214, 0.3);
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+.thong-tin-them::before {
+    content: '💎';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    animation: crystalPulse 2s infinite;
+}
+
+.ngay-cap-nhat {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.nguon-tham-khao {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
 @media (max-width: 768px) {
     .ten-bao {
         font-size: 2.5rem;

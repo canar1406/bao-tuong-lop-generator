@@ -494,6 +494,28 @@ body {
     opacity: 0.9;
 }
 
+.thong-tin-them {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.ngay-cap-nhat {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.nguon-tham-khao {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 @media screen and (max-width: 768px) {
     .ten-bao {
         font-size: 2.5rem;

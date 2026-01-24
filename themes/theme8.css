@@ -704,6 +704,39 @@ body {
     font-weight: 700;
 }
 
+.thong-tin-them {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    background: linear-gradient(135deg, rgba(255, 240, 245, 0.95) 0%, rgba(240, 248, 255, 0.95) 100%);
+    border-radius: 40px;
+    border: 5px dashed #ffb3d9;
+    box-shadow: 0 15px 40px rgba(255, 182, 193, 0.4);
+}
+
+.ngay-cap-nhat {
+    color: #ff69b4;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 0 #ffb3d9;
+}
+
+.ngay-cap-nhat::before {
+    content: '📅 ';
+}
+
+.nguon-tham-khao {
+    color: #9370db;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-weight: 700;
+}
+
+.nguon-tham-khao::before {
+    content: '📚 ';
+}
+
 @media screen and (max-width: 768px) {
     .ten-bao {
         font-size: 3rem;

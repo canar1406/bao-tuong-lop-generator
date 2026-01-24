@@ -534,6 +534,28 @@ body {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
+.thong-tin-them {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+    background: linear-gradient(135deg, rgba(255, 138, 101, 0.15) 0%, rgba(255, 87, 34, 0.15) 100%);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.ngay-cap-nhat {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.nguon-tham-khao {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 @media screen and (max-width: 768px) {
     .ten-bao {
         font-size: 3rem;

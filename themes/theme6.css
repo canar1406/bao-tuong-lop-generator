@@ -566,6 +566,40 @@ body {
     text-shadow: 0 0 10px #00ffff;
 }
 
+.thong-tin-them {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+    background: rgba(138, 43, 226, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    box-shadow: 
+        0 0 20px rgba(0, 255, 255, 0.3),
+        inset 0 0 20px rgba(138, 43, 226, 0.2);
+}
+
+.ngay-cap-nhat {
+    color: #00ffff;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    text-shadow: 
+        0 0 10px #00ffff,
+        0 0 20px #00ffff;
+    letter-spacing: 1px;
+}
+
+.nguon-tham-khao {
+    color: #ff00ff;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 600;
+    text-shadow: 
+        0 0 8px #ff00ff,
+        0 0 15px #ff00ff;
+}
+
 @media screen and (max-width: 768px) {
     .ten-bao {
         font-size: 3rem;

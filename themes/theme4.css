@@ -1,5 +1,5 @@
 /* Theme 4: Swiss Minimalist - Thụy Sĩ Tối Giản */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -8,19 +8,20 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    line-height: 1.8;
-    color: #000;
-    background: #fff;
-    font-weight: 300;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #fafafa;
+    font-weight: 400;
+    letter-spacing: -0.01em;
 }
 
 #header {
-    background: #000;
-    color: #fff;
-    padding: 5rem 2rem;
+    background: #fff;
+    color: #1a1a1a;
+    padding: 6rem 2rem 4rem 2rem;
     text-align: left;
-    border-bottom: 2px solid #000;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .banner {
@@ -29,21 +30,21 @@ body {
 }
 
 .ten-bao {
-    font-size: 5rem;
-    font-weight: 100;
-    letter-spacing: -3px;
-    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: 600;
+    letter-spacing: -0.03em;
     margin-bottom: 1rem;
-    line-height: 1;
+    line-height: 1.1;
+    color: #000;
 }
 
 .slogan {
-    font-size: 1.1rem;
-    font-weight: 300;
-    letter-spacing: 3px;
-    margin-top: 2rem;
-    opacity: 0.7;
-    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin-top: 1.5rem;
+    opacity: 0.6;
+    color: #666;
 }
 
 #content {
@@ -55,48 +56,68 @@ body {
 .gioi-thieu {
     padding: 0;
     background: transparent;
-    border-left: 3px solid #000;
-    padding-left: 4rem;
-    margin: 5rem 0;
+    border-left: 2px solid #e5e5e5;
+    padding-left: 3rem;
+    margin: 4rem 0;
 }
 
 .gioi-thieu h2 {
-    font-size: 2.5rem;
-    font-weight: 100;
-    margin-bottom: 2rem;
-    letter-spacing: -1px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    color: #000;
 }
 
 .gioi-thieu p {
-    font-size: 1.2rem;
-    line-height: 2;
+    font-size: 1.05rem;
+    line-height: 1.75;
     max-width: 800px;
+    color: #333;
 }
 
 .khu-vuc-bai-viet {
     padding: 0;
-    margin: 8rem 0;
+    margin: 6rem 0;
 }
 
 .khu-vuc-bai-viet h2 {
-    font-size: 3rem;
-    font-weight: 100;
-    margin-bottom: 4rem;
-    letter-spacing: -2px;
-    border-bottom: 1px solid #000;
-    padding-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    letter-spacing: -0.02em;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 1.5rem;
+    color: #000;
 }
 
 .bai-viet {
-    background: transparent;
-    border: none;
-    border-top: 2px solid #e0e0e0;
-    padding: 4rem 0;
-    margin-bottom: 0;
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 4rem;
-    align-items: start;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    transition: all 0.2s ease;
+}
+
+.bai-viet:hover {
+    border-color: #d0d0d0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.tieu-de-bai {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+    color: #000;
+}
+
+.noi-dung {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: #333;
 }
 
 .bai-viet:first-child {
@@ -105,86 +126,84 @@ body {
 
 .tieu-de-bai {
     font-size: 1.5rem;
-    font-weight: 700;
-    margin: 0;
-    letter-spacing: -0.5px;
-    padding: 0;
-    border: none;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+    color: #000;
 }
 
 .noi-dung {
-    font-size: 1.1rem;
-    line-height: 2;
-    text-align: left;
-    font-weight: 300;
-    max-width: 700px;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: #333;
 }
 
 .tac-gia {
-    grid-column: 2;
     text-align: left;
-    font-style: normal;
-    color: #666;
-    margin-top: 1rem;
+    font-style: italic;
+    color: #999;
+    margin-top: 0.5rem;
     font-weight: 400;
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 0.9rem;
 }
 
 .goc-anh {
     padding: 0;
-    margin: 8rem 0;
+    margin: 6rem 0;
 }
 
 .goc-anh h2 {
-    font-size: 3rem;
-    font-weight: 100;
-    margin-bottom: 4rem;
-    letter-spacing: -2px;
-    border-bottom: 1px solid #000;
-    padding-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    letter-spacing: -0.02em;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 1.5rem;
+    color: #000;
 }
 
 .thu-vien-anh {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
 }
 
 .khung-anh {
-    background: #000;
-    border: none;
-    border-radius: 0;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
     overflow: hidden;
     position: relative;
+    transition: all 0.2s ease;
+}
+
+.khung-anh:hover {
+    border-color: #d0d0d0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
 .khung-anh img {
     width: 100%;
-    height: 350px;
+    height: 300px;
     object-fit: cover;
     display: block;
-    filter: grayscale(30%);
-    transition: all 0.4s ease;
+    transition: opacity 0.2s ease;
 }
 
 .khung-anh:hover img {
-    filter: grayscale(0%);
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .mo-ta-anh {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1.5rem;
-    text-align: left;
-    color: #fff;
-    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    padding: 1.25rem;
+    text-align: center;
+    color: #666;
+    background: #fff;
     font-weight: 400;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
     text-transform: uppercase;
     letter-spacing: 1px;
     opacity: 0;
@@ -196,18 +215,21 @@ body {
 }
 
 .goc-am-nhac {
-    padding: 5rem 0;
-    background: #f5f5f5;
-    margin: 8rem -2rem;
-    padding: 5rem 2rem;
+    padding: 4rem 0;
+    background: #fff;
+    margin: 6rem 0;
+    border: 1px solid #e5e5e5;
+    border-left: none;
+    border-right: none;
 }
 
 .goc-am-nhac h2 {
-    font-size: 3rem;
-    font-weight: 100;
-    margin-bottom: 4rem;
-    letter-spacing: -2px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    letter-spacing: -0.02em;
     text-align: center;
+    color: #000;
 }
 
 .khu-vuc-media {
@@ -216,12 +238,12 @@ body {
 }
 
 .gioi-thieu-media {
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    color: #000;
 }
 
 .audio-player {
@@ -253,12 +275,18 @@ body {
 .goc-binh-luan {
     padding: 0;
     background: transparent;
-    margin: 8rem 0;
+    margin: 6rem 0;
 }
 
 .goc-binh-luan h2 {
-    font-size: 3rem;
-    font-weight: 100;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 1.5rem;
+    color: #000;
+}
     margin-bottom: 4rem;
     letter-spacing: -2px;
     border-bottom: 1px solid #000;
@@ -267,49 +295,57 @@ body {
 
 .khu-vuc-form {
     max-width: 700px;
-    margin: 0;
+    margin: 2rem 0 0 0;
 }
 
 .khu-vuc-form > p {
     text-align: left;
-    font-size: 1.1rem;
-    margin-bottom: 3rem;
-    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #666;
+    font-weight: 400;
 }
 
 .form-binh-luan {
-    background: transparent;
-    padding: 0;
+    background: #fff;
+    padding: 2rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
 }
 
 .form-group {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .form-group label {
     display: block;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    color: #000;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 1.2rem 0;
-    border: none;
-    border-bottom: 2px solid #e0e0e0;
-    font-size: 1.1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    font-size: 1rem;
     font-family: inherit;
-    font-weight: 300;
-    transition: all 0.3s ease;
-    background: transparent;
+    font-weight: 400;
+    transition: all 0.2s ease;
+    background: #fafafa;
+    color: #333;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
+    outline: none;
+    border-color: #000;
+    background: #fff;
+}
     outline: none;
     border-bottom-color: #000;
 }
@@ -317,18 +353,36 @@ body {
 .nut-gui {
     background: #000;
     color: #fff;
-    padding: 1.5rem 4rem;
-    border: none;
+    padding: 1.1rem 3rem;
+    border: 2px solid #000;
     font-size: 0.9rem;
-    font-weight: 700;
+    font-weight: 600;
+    letter-spacing: 0.1em;
     cursor: pointer;
     transition: all 0.3s ease;
+    border-radius: 2px;
+    font-family: inherit;
+    margin-top: 1.5rem;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     text-transform: uppercase;
-    letter-spacing: 3px;
 }
 
 .nut-gui:hover {
-    background: #333;
+    background: #fff;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nut-gui:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.nut-gui:focus {
+    outline: 2px solid #666;
+    outline-offset: 2px;
 }
 
 #footer {
@@ -388,12 +442,36 @@ body {
 
 .copyright {
     text-align: center;
-    padding: 3rem 0 0 0;
-    margin-top: 4rem;
-    border-top: 1px solid #333;
-    font-weight: 300;
+    padding: 2rem 0 0 0;
+    margin-top: 3rem;
+    border-top: 1px solid #e5e5e5;
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: #999;
+}
+
+.thong-tin-them {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+}
+
+.ngay-cap-nhat {
+    color: #666;
     font-size: 0.9rem;
-    opacity: 0.6;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+.nguon-tham-khao {
+    color: #999;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 1024px) {

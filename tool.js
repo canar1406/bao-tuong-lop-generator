@@ -98,6 +98,8 @@ function generateHTML() {
     const email = document.getElementById('emailInput').value;
     const classInfo = document.getElementById('classInput').value;
     const copyright = document.getElementById('copyrightInput').value;
+    const lastUpdate = document.getElementById('lastUpdateInput').value;
+    const sourceReference = document.getElementById('sourceReferenceInput').value;
     
     // Check for blocked name
     const membersLower = members.toLowerCase();
@@ -221,6 +223,11 @@ ${memberListHTML}
                 <p>Email: <a href="mailto:${email}">${email}</a></p>
                 <p>${classInfo}</p>
             </div>
+        </div>
+        
+        <div class="thong-tin-them">
+            <p class="ngay-cap-nhat">${lastUpdate}</p>
+            <p class="nguon-tham-khao">${sourceReference}</p>
         </div>
         
         <div class="copyright">
